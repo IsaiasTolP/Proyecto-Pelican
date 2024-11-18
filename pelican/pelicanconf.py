@@ -1,4 +1,4 @@
-AUTHOR = 'Isaias, David, Lucas'
+AUTHOR = 'Isaias, David'
 SITENAME = 'CodiZen'
 SITEURL = ''
 

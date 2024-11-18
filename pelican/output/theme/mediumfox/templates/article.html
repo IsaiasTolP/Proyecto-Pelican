@@ -2,7 +2,7 @@
 {% block title %}{{ article.title|striptags }}{% endblock %}
 {% block meta_block %}
 {{ super() }}
-  <meta name="description" content="{{article.title|striptags}} written {{ article.date|strftime('%B %d, %Y') }}{% if article.tags %} in {% for tag in article.tags %}{{tag|lower}}{% if not loop.last %},{% endif %}{% endfor %}{% endif %}">
+  <meta name="description" content="{{article.title|striptags}}{% if article.tags %} in {% for tag in article.tags %}{{tag|lower}}{% if not loop.last %},{% endif %}{% endfor %}{% endif %}">
   {% if article.keywords %}
   <meta name="keywords" content="{{article.keywords}}" />
   {% endif %}
@@ -18,7 +18,6 @@
       <div class="col-md-8 col-md-offset-2">
         <h1>{{ article.title|striptags }}</h1>
         <div class="meta">
-          written <time datetime="{{ article.date.isoformat()  }}">{{ article.date|strftime('%B %d, %Y') }}</time>
           {% if article.tags %}
           in <span class="categories">
           {% for tag in article.tags %}
