@@ -9,7 +9,8 @@
       <div class="container">
         <div class="row">
           <div id="about-me" class="col-md-offset-3 col-md-6">
-            <h1 id="name">{{ SITENAME|striptags }}</h1>
+            
+            <h1 id="name"><img src="{{ SITEURL }}/theme/images/logo.jpeg" alt="logo" width="50px"> {{ SITENAME|striptags }}</h1>
             {% if SITE_DESCRIPTION %}
             <p>{{ SITE_DESCRIPTION|striptags }}</p>
             {% endif %}
@@ -41,9 +42,9 @@
             <div class="col-md-offset-1 col-md-10">
               <article>
                 <h2 id="introductionText">{{ article.title|striptags }}</h2>
-                <p>
+                <div class="content">
                   {{ article.content }}
-                </p>
+                </div>
                 <span class="meta">
                   {% if article.tags %}
                   in <span class="categories">
