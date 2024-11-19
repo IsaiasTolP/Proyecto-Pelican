@@ -5,7 +5,7 @@
   </div>
 
   <div class="home-field">
-    <div class="home-landing her-row">
+    <div class="her-row" id="home-landing">
       <div class="container">
         <div class="row">
           <div id="about-me" class="col-md-offset-3 col-md-6">
@@ -33,15 +33,16 @@
     </div>
 
     <div class="article-list">
-      <div class="container">
+      <div class="container-fluid">
         {% for article in articles_page.object_list %}
+          <hr class="divider-large"/>
           <!-- CONTENT GOES HERE -->
-          <div class="row">
+          <div class="row col-md-offset-1 col-md-10">
             <div class="col-md-offset-1 col-md-10">
               <article>
-                <h2>{{ article.title|striptags }}</h2>
+                <h2 id="introductionText">{{ article.title|striptags }}</h2>
                 <p>
-                  {{ article.summary }}
+                  {{ article.content }}
                 </p>
                 <span class="meta">
                   {% if article.tags %}
@@ -57,7 +58,6 @@
         {% endfor %}
       </div>
     </div>
-    <hr class="divider-short"/>
   </div>
 </div>
 {% endblock content %}

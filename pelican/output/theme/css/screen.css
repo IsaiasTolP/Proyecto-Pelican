@@ -162,6 +162,10 @@ html {
 /* line 19, ../sass/base/bootstrap/_normalize.scss */
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: wrap;
 }
 
 /* line 30, ../sass/base/bootstrap/_normalize.scss */
@@ -8394,6 +8398,7 @@ button.close {
 /* line 38, ../sass/base/_layout.scss */
 .home-page {
   margin-top: 500px;
+  flex: 1;
 }
 
 /* line 42, ../sass/base/_layout.scss */
@@ -8416,7 +8421,7 @@ button.close {
 
 /* line 59, ../sass/base/_layout.scss */
 .article-list {
-  background-color: white;
+  background-color: #ece6ff;
   padding-top: 60px;
 }
 /* line 63, ../sass/base/_layout.scss */
@@ -8562,4 +8567,22 @@ article .meta a {
   margin: 0px;
   padding: 6px 0px 0px 0px;
   text-transform: none;
+}
+
+#introductionText {
+  text-align: center;
+}
+
+.divider-large {
+  display: block;
+  width: 75%;
+  margin: 50px auto 40px auto;
+  border: 0;
+  border-top: 2px solid #6b4996;
+}
+
+#home-landing {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: white;
 }
