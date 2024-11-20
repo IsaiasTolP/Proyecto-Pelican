@@ -9,9 +9,14 @@ noHTML: true
     <li>Comunidad: Fomentamos una comunidad de jugadores que comparten un interés común en la relajación y el bienestar, creando un espacio seguro y acogedor.</li>
 </ol>
 
+
+
+### Contacta con nosotros a través de:
+- Teléfono: +34 922 10 10 10
+- Mail: CodiZen@example.es
+
 <div class="d-flex img-container">
 <img src="./images/glyphicons_social_31_twitter.png" width="50px" alt="twitter">
 <img src="./images/glyphicons_social_21_github.png" width="50px" alt="Github">
 <img src="./images/glyphicons_social_17_linked_in.png" width="50px" alt="Linkedin">
 </div>
-
