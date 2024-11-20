@@ -9,7 +9,7 @@ Status: hidden
 
 ### The Mistery of Moonlight Valley
 
-<div class="text-center"><img src="./images/portada-1.jpg" alt="Portada Mistery of Moonlight Valley"></div>
+![Portada Mistery of Moonlight Valley](./images/portada-1.jpg)
 
 - Este es un juego ambientado en un pueblo tranquilo, pero que esconde un gran misterio relacionado con la enorme Luna que se puede observar en sus cielos durante las 24 horas del día y a la que nadie parece prestar atención... Explora este apacible pueblo de las montañas rocosas y adentrate en las profundidades de unas antiguas ruinas de la civilización ya perdida que antes poblaba este lugar.
 
@@ -17,10 +17,9 @@ Status: hidden
 
 - Elije tu propio camino: Con múltiples finales, el misterio de Moonlight Valley te dejará con la duda de que habría sucedido de no ser por aquella (fatídica, o no) decisión.
 
-
 ### Infinite Blue
 
-<div class="text-center"><img src="./images/portada-2.jpg" alt="Portada Infinite Blue"></div>
+![Portada Infinite Blue](./images/portada-2.jpg)
 
 - Adentrate en una aventura espacial sin precedentes en donde cada persona dispone de un equipo personal portatil capaz de controlar su nave espacial completamente personalizable. Si lo estabas pensando, sí esto es un juego multijugador masivo con un fuerte componente basado en la comunidad.
 
@@ -30,7 +29,7 @@ Status: hidden
 
 ### River Boat
 
-<div class="text-center"><img src="./images/portada-3.webp" alt="Portada River Boat"></div>
+![Portada River Boat](./images/portada-3.webp)
 
 - Nuestro primer juego. Fue un proyecto de final de curso en el cual decidimos llevar a cabo un videojuego sencillo y relajante. Este juego se basa en un sencillo personaje que dispone de un bote de pesca y decide aventurarse a viajar a lo largo del río que se encuentra cerca de su casa.
 
