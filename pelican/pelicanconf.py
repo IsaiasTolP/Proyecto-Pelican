@@ -1,6 +1,6 @@
 from pelican import signals
 
-AUTHOR = 'Isaias, David'
+AUTHOR = 'Isaias, David, Lucas'
 SITENAME = 'CodiZen'
 SITEURL = ''
 
