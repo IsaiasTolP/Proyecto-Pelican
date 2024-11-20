@@ -8386,6 +8386,14 @@ button.close {
   outline: 0;
   word-break: break-word;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#name img {
+  border-radius: 10px;
 }
 /* line 30, ../sass/base/_layout.scss */
 .hero > p {
@@ -8590,4 +8598,37 @@ article .meta a {
 .d-flex {
   display: flex;
   justify-content: center;
+}
+
+.img-container {
+  justify-content: space-evenly;
+}
+
+.img-container img {
+  cursor: pointer;
+}
+
+.text {
+  margin-top: 25px;
+}
+
+.article-content {
+  text-align: center;
+}
+
+.article-content h3 {
+  font-weight: bold;
+  margin-top: 75px;
+}
+
+.article-content h1 {
+  text-transform: uppercase;
+}
+
+.article-content h1, .article-content h2, .article-content h3 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.article-content img {
+  border-radius: 10px;
 }

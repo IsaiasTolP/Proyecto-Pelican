@@ -1,3 +1,5 @@
+from pelican import signals
+
 AUTHOR = 'Isaias, David'
 SITENAME = 'CodiZen'
 SITEURL = ''
@@ -35,3 +37,17 @@ DEFAULT_PAGINATION = False
 # RELATIVE_URLS = True
 
 THEME = './output/theme/mediumfox/'
+
+def exclude_nohtml(generator):
+    generator.nohtml_articles = [
+        article for article in generator.articles if not article.metadata.get('noHTML', '').lower() == 'true'
+    ]
+
+    generator.articles = [article for article in generator.articles if not article.metadata.get('noHTML', '').lower() != 'true']
+    
+def add_nohtml_to_context(generator):
+    context = generator.context
+    context['nohtml_articles'] = getattr(generator, 'nohtml_articles', [])
+
+signals.article_generator_finalized.connect(exclude_nohtml)
+signals.article_generator_finalized.connect(add_nohtml_to_context)

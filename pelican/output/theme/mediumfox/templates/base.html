@@ -45,6 +45,11 @@
       <img src="{{ SITEURL }}/theme/images/home.png"/>
       {% endif %}
     </a>
+    <header>
+      {% block header %}
+      {% endblock header %}
+    </header>
+    
     {% block content %}
     {% endblock content %}
     <footer id="footer" class="her-row">

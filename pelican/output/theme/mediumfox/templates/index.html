@@ -1,41 +1,15 @@
-{% extends "base.html" %}
+{% extends "header.html" %}
 {% block content %}
 <div class="home-page">
   <div class="hero">
   </div>
 
   <div class="home-field">
-    <div class="her-row" id="home-landing">
-      <div class="container">
-        <div class="row">
-          <div id="about-me" class="col-md-offset-3 col-md-6">
-            
-            <h1 id="name"><img src="{{ SITEURL }}/theme/images/logo.jpeg" alt="logo" width="50px"> {{ SITENAME|striptags }}</h1>
-            {% if SITE_DESCRIPTION %}
-            <p>{{ SITE_DESCRIPTION|striptags }}</p>
-            {% endif %}
-            <div class="social-icon-list">
-            	{% if AUTHOR_TWITTER %}
-              <a title="Twitter" href="https://twitter.com/{{ AUTHOR_TWITTER }}"><img src="{{ SITEURL }}/theme/images/glyphicons_social_31_twitter.png"/></a>
-              {% endif %}
-              {% if AUTHOR_GITHUB %}
-              <a title="GitHub" href="https://github.com/{{ AUTHOR_GITHUB }}"><img src="{{ SITEURL }}/theme/images/glyphicons_social_21_github.png"/></a>
-              {% endif %}
-              {% if AUTHOR_LINKEDIN %}
-              <a title="LinkedIn" href="https://linkedin.com/in/{{ AUTHOR_LINKEDIN }}"><img src="{{ SITEURL }}/theme/images/glyphicons_social_17_linked_in.png"/></a>
-              {% endif %}
-              {% if AUTHOR_EMAIL %}
-              <a title="E-Mail" href="mailto:{{ AUTHOR_EMAIL }}"><img src="{{ SITEURL }}/theme/images/glyphicons_social_39_e-mail.png"/></a>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div class="article-list">
       <div class="container-fluid">
-        {% for article in articles_page.object_list %}
+        {% for article in nohtml_articles %}
           <hr class="divider-large"/>
           <!-- CONTENT GOES HERE -->
           <div class="row col-md-offset-1 col-md-10">
